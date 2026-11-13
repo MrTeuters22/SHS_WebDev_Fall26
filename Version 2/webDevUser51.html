@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Version 2.0 | Lucas Tippie | User 51 | Completed November 13, 2026 -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Lucas Tippie</title>
+
+  <style>
+    #banner {
+      border: 5px outset red;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    div#face {
+      width: 40vw;
+      height: 40vw;
+      max-width: 400px;
+      max-height: 400px;
+      margin: 2rem auto 0;
+      position: relative;
+      background: lightgreen;
+    }
+
+    div#face, div#face * {
+      border-radius: 50%;
+    }
+
+    .eye {
+      width: 25%;
+      height: 25%;
+      background: #fff;
+      position: absolute;
+      top: 20%;
+    }
+
+    .left.eye { left: 20%; }
+    .right.eye { right: 20%; }
+
+    .pupil {
+      background: #000;
+      width: 50%;
+      height: 50%;
+      position: relative;
+      left: 25%;
+      transform-origin: bottom;
+    }
+
+    #mouth {
+      position: relative;
+      width: 60%;
+      left: 20%;
+      height: 25%;
+      border: 1vw solid transparent;
+      border-radius: 50%;
+      top: 50%;
+      border-bottom-color: #000;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -35,6 +89,29 @@
       <progress id="learning" value="22" max="100">22%</progress>
       <p>I use <abbr title="Hypertext Markup Language">HTML</abbr> to build webpages.</p>
     </div>
+
+    <!-- A div groups the banner text so it can be styled together. -->
+    <div id="banner">
+      <h2>Welcome to Lucas's Website!</h2>
+      <p>Cars, electric bikes, and learning to code.</p>
+    </div>
+
+    <!-- Customized smiley face: light green instead of yellow. -->
+    <div id="face" role="img" aria-label="A light green smiling face">
+      <div class="left eye">
+        <div class="pupil"></div>
+      </div>
+      <div class="right eye">
+        <div class="pupil"></div>
+      </div>
+      <div id="mouth"></div>
+    </div>
+
+    <!-- A section groups related content under a heading. -->
+    <section>
+      <h2>My Web Development Goal</h2>
+      <p>I want to learn how to make my own websites. I am practicing using HTML to organize content and CSS to change how it looks.</p>
+    </section>
   </main>
 
   <footer>
