@@ -19,7 +19,56 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 191, 255);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -37,27 +86,62 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h3>this is heading 3</h3>
+            <h4>this is heading 4</h4>
+            <h5>this is heading 5</h5>
+            <h6>this is heading 6</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+             <del>watch there be a strike through here</del>
+             <ins>watch there be an underline here</ins>
+             <strong>watch there be bold text here</strong>
+             <em>watch there be italic text here</em>
+             <q>watch there be quoted text here</q>
+             <big>watch there be big text here</big>
+             <mark>watch there be highlighted text here</mark>
+             <small>watch there be small text here</small>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
+        <div web dev is time taking id="banner">
         </div>
         <div id="face">
-
+                <div class="left eye">
+                    <div class="pupil">
+                    </div>
+                </div>
+                <div class="right eye">
+                    <div class="pupil">
+                    </div>
+                </div>
+                <div id="mouth">
+                </div>
         </div>
+        <div id="sections">
+            <h1>Big title</h1>
+        <section>
+            <h2>1st Point</h2>
+            <p>it says first point to show that it's my first point</p>
+        </section>
+
+        <section>
+             <h2>2nd Point</h2>
+             <p>it says second point to show that it's my second point</p>
+                
+        </section>
+        </div>
+
+
     </main>
+
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[your name]</a> </center>
         </p>
 
     </footer>

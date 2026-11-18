@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Abdi Ahmed
+        Date Completed: 11/16/2026
     -->
 
 <head>
@@ -19,7 +20,56 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -37,30 +87,66 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+             <h1>heading 1</h1>
+            <h2>heading 2</h2>
+            <h3>heading 3</h3>
+            <h4>heading 4</h4>
+            <h5>heading 5</h5>
+            <h6>heading 6</h6>
 
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+             <p>This is my <del>old</del> <ins>new</ins> website!</p>
+
+<p>Water is H<sub>2</sub>O.</p>
+
+<p>My favorite number is 11<sup>rd</sup>.</p>
+
+<small>Thanks for visiting my website!</small>
+
+<progress value="75" max="100"></progress>
+
+<hr>
+
+<p><abbr title="premier league">PL</abbr> is my favorite league.</p>
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            <h1>My Web Development Page</h1>
+<p>Welcome to my webpage!</p>
         </div>
-        <div id="face">
+        <div id="face"> 
+            <div class="left eye">
+    <div class="pupil"></div>
+</div>
 
-        </div>
+<div class="right eye">
+    <div class="pupil"></div>
+</div>
+
+<div id="mouth"></div>
+    </div>
+    <section>
+    <h2>About Me</h2>
+    <p>My name is Abdi. I am learning HTML and CSS. I enjoy basketball and learning how to create websites.</p>
+</section>
     </main>
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Abdi Ahmed]</a></center>
         </p>
 
     </footer>
 </body>
 
 </html>
+
+
+Resources

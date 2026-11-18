@@ -19,6 +19,64 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+            border: 5px outset red 
+            background-color: light blue;
+            text-align: center;
+        }
+       
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
+            
+        
 
     </style>
 </head>
@@ -37,20 +95,47 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <h1>Something funny here</h1>
+            <h2>Hi</h2>
+            <h3>Something</h3>
+            <h4>test</h4>
+            <h5>Cool</h5>
+            <h6>Great</h6>
 
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
+            <h2></h2>
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+ <del>Dominic</del> a man named John who was a web developer
+    <ins>underline</ins>
+    <sub>sun</sub>
+    <sup>test</sup>
+    <small>text</small>
+    <progress value="22" max="100" ></progress>
+    <hr>
+    <abbr title="test thing" > W </abbr>
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
+            <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>
 
         </div>
+    <div>
+        <p>My name is <code>Dominic</code> #13</p>
+    </div>
     </main>
 
 
