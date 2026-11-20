@@ -4,22 +4,100 @@
         Name: Logan.C
         Date Completed:
     -->
-
 <head>
-
     <title>User 27 Version 2.0 </title>
-
+    
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Tags and DIV's">
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <style>
+#banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
 
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 85, 255);
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 100%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #ffffff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.brow {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 1vw solid transparent;
+    top: 12%;
+    right: 10%;
+    border-top-color: #000000;
+}
+
+.left.brow {
+    left: 17%;
+}
+
+.right.brow {
+    right: 17%;
+}
+
+.pupil {
+    background: rgb(0, 0, 0);
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 25%;
+    left: 15%;
+    transform-origin: bottom;
+}
+
+#nose {
+    width: 20%;
+    height: 20%;
+    background: #00059d;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+#mouth {
+    position: relative;
+    width: 70%;
+    left: 12.5%;
+    height: 70%;
+    border: 1vw solid transparent;
+    top: 65%;
+    border-top-color: #000000;
+}
     </style>
 </head>
 
@@ -28,6 +106,9 @@
 
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
+            <div id="banner">
+            <big>Logans V2 page!</big>
+            </div>
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
@@ -48,18 +129,35 @@
             <h2>Examples of "Other" HTML elements</h2>
             <hr>
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-             <progress value="1" max="100" > </progress >
+             <progress value="10" max="100" > show progress</progress >
             <p>50% discount! <del>1000$</del> <ins>500$</ins></p>
-            <p>when i say hey! you say hou! <sup>hey!</sup><sub>hou!</sub></p>
-            <p><small>small</small></p>
+            <p>when i say hey! you say ho! <sup>hey!</sup><sub>ho!</sub></p>
+            <p><small>small text</small></p>
+            <p><big>big text</big></p>
             <abbr title="You Only Live Once!">YOLO!</abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
-        </div>
-        <div id="face">
 
+
+    <div id="face">
+        <div class="left eye">
+            <div class="pupil">
+            </div>
         </div>
+        <div class="right eye">
+            <div class="pupil">
+            </div>
+        </div>
+        <div class="left brow">
+        </div>
+        <div class="right brow">
+        </div>
+        <div id="nose">
+        </div>
+        <div id="mouth">
+        </div>
+    </div>
+
     </main>
 
 
