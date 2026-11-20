@@ -19,13 +19,72 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+    div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: gold;
+    margin-top: 2rem;
+}
 
-    </style>
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 45%;
+    height: 45%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
+
+.banner {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
-    <main class="wideMargin">
-
+<div class="banner">
+    <h1>Welcome to my webpage</h1>
+</div>
+<main class="wideMargin">
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
         <div id="tags">
@@ -36,24 +95,45 @@
 
             <h2>Heading Examples</h2>
 
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>i like ice cream</h1>
+        <h2>i like to play soccer</h2>
+        <h3>i like coding webpages</h3>
+        <h4>i like listening to music</h4>
+        <h5>i like hanging out with friends</h5>
+        <h6>i like learning HTML</h6>
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
 
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+ <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+
+<p>There was a man from the <del>moon</del> <ins>Shakopee</ins>.</p>
+<p>Today is November 16<sup>th</sup> and I need some H<sub>2</sub>O.</p>
+<p><small>Read the fine print.</small></p>
+<p>Assignment progress: <progress value="99" max="100">99%</progress></p>
+<hr>
+<p>I go to <abbr title="Shakopee High School">SHS</abbr>.</p> 
+
+<!-- Put your 8 examples ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->           
         </div>
         <div id="banner">
         </div>
         <div id="face">
-
+            <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>
         </div>
     </main>
 
-
+ </main>
     <footer>
 
         <p>

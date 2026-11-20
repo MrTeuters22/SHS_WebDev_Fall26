@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Lucas Zheng
+        Date Completed: November 18, 2026
     -->
 
 <head>
@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+    border: 5px outset rgb(41, 41, 232);
+    background-color: rgb(59, 234, 103);
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(228, 40, 40);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #dbcf25;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #2206fb;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #739dec;
+}
     </style>
 </head>
 
@@ -31,7 +85,7 @@
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
+                Watch out world of web design here I come! This is my smiley face i made changes to. 
             </p>
 
             <h2>Heading Examples</h2>
@@ -49,7 +103,16 @@
         <div id="banner">
         </div>
         <div id="face">
-
+                       <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>
         </div>
     </main>
 
@@ -57,7 +120,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Lucas Zheng]</a></center>
         </p>
 
     </footer>

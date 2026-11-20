@@ -1,33 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 2.0
-        Name:
-        Date Completed:
-    -->
 
 <head>
-
-    <title>User ## Version 2.0 </title>
-
-    <!-- Meta -->
+    <title>Zuhaib Abdi Version 2.0</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Tags and DIV's">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: purple;
+            margin-top: 2rem;
+        }
+
+        div#face, div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
     </style>
 </head>
 
 <body>
     <main class="wideMargin">
-
-        <!-- Your 1st Heading-->
         <h1>About Me</h1>
+
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
@@ -36,30 +82,65 @@
 
             <h2>Heading Examples</h2>
 
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>My Website</h1>
+            <h2>About My Hobbies</h2>
+            <h3>My Favorite Games</h3>
+            <h4>My School</h4>
+            <h5>My Favorite Foods</h5>
+            <h6>My Future Goals</h6>
 
             <h2>Examples of "Other" HTML elements</h2>
 
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <p>I used to play <del>on console</del> but now I play on PC.</p>
 
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <p>Welcome to my <ins>awesome website!</ins></p>
+
+            <p>This is subscript: H<sub>2</sub>O</p>
+
+            <p>This is superscript: 2<sup>3</sup> = 8</p>
+
+            <p><small>This is some smaller text.</small></p>
+
+            <p>My website progress:
+                <progress value="75" max="100"></progress>
+            </p>
+
+            <hr>
+
+            <p>I am learning
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                in Web Development class.
+            </p>
         </div>
+
         <div id="banner">
+            <h2>Welcome to Zuhaib's Website!</h2>
+            <p>This is my custom banner made using HTML and CSS.</p>
         </div>
-        <div id="face">
 
+        <div id="face">
+            <div class="left eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right eye">
+                <div class="pupil"></div>
+            </div>
+            <div id="mouth"></div>
         </div>
+
+        <section>
+            <h2>My Favorite Games</h2>
+            <p>
+                I enjoy playing Deadlock, Fortnite, and Deepwoken.
+               
+            </p>
+        </section>
     </main>
 
-
     <footer>
-
-        <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+        <p style="text-align: center;">
+            Webpage made by <a href="#">Zuhaib Abdi</a>
         </p>
-
     </footer>
 </body>
 
