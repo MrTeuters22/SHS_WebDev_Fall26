@@ -23,6 +23,8 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+    <link rel="stylesheet" href="CSS/style.css">
+
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -31,31 +33,19 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        #songs {
-            width: 100%;
-            max-width: 640px;
-            border-collapse: collapse;
+        td {
+            color: #FF0000;
         }
-        #songs th, #songs td {
-            border: 1px solid #cad1db;
-            padding: 6px 10px;
-            text-align: left;
-        }
-        #songs thead {
-            background: #23354c;
-            color: white;
-        }
-        #songs tbody tr:nth-child(even) {
-            background: #f1f5f9;
-        }
+
         footer {
             font-size: 12px;
             text-align: center;
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body class="music-page">
     <!---------------------------------- Begin the nav-bar ------------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
@@ -109,10 +99,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr style="background-color: #ffe6a0; font-weight: bold;">
                     <td>1</td>
                     <td>Drake</td>
-                    <td>Feel No Ways</td>
+                    <td style="color:#00FF00; background-color:sienna;">Feel No Ways</td>
                     <td><img src="images/views.jpg" alt="Views album cover" width="76" height="76"></td>
                 </tr>
                 <tr>
