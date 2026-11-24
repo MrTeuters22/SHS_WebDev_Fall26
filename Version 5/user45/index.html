@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-    Name:
-    Date Completed:
+    Name: Justin
+    Date Completed: 18 Novembeer 2026
 -->
 
 <head>
@@ -32,6 +32,36 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        .hidden {
+    display: none;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,a.skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
         footer {
             font-size: 12px;
             text-align: center;
@@ -50,6 +80,8 @@
     </style>
 
     <body>
+        <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
+        
         <!---------------------------------- Begin the nav-bar ----------------------------------->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
@@ -92,9 +124,10 @@
         <!---------Jumbotron---------------------------------------------->
         <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
             <h4> Bootstrap Examples</h4>
-            <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+            <p class="lead"> Let's look at the main different examples of how we can use bootstrap and what bootstrap can do!
             </p>
         </header>
+<div id="main" class="hidden" tabindex="-1"></div>
 
         <main>
             <!---------Three Column Layouts------------------------------------>
