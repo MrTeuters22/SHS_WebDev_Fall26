@@ -1,90 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <!--Version 3.0
-        Name:
-        Date Completed:
-    -->
+    Name: Cameron Wetch
+    Date Completed:
+-->
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Music for Web Dev User ## </title>
+    <title>Music for Web Dev</title>
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 3.0 - My Favorite Music">
-
-    <!-- CSS -->
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Custom -->
-    <link rel="stylesheet" href="">
 
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
 
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-        footer {
-            font-size: 12px;
+        h1, h2 {
             text-align: center;
+            margin: 25px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px;
         }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a href="index.html" class="navbar-brand">WebDev</a>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav me-auto">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="aboutMe.html" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="music.html" class="nav-link">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="list.html" class="nav-link">Lists</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                    </li>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </ul>
-                <form class="d-flex">
-                    <button class="btn btn-primary" type="button">Login</button>
-                </form>
-            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link active">Music</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
-    <main class="container-fluid mt-3">
+    <main class="container-fluid">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1>
-        <!-- Edit this line for the title of your page -->
+        <h1>My Music Page</h1>
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h2>My Top 5 Favorite Songs</h2>
+
         <table id="songs">
+
             <thead>
                 <tr>
                     <th>Rank</th>
@@ -93,48 +90,68 @@
                     <th>Album Art</th>
                 </tr>
             </thead>
-            <tr>
-                <td>1</td>
-                <td>Rush</td>
-                <td>Fly By Night</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>BNL</td>
-                <td>One Week</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Dave Matthews Band</td>
-                <td>Grey Street</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Modest Mouse</td>
-                <td>One Chance</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>New Radicals</td>
-                <td>Someday We'll Know</td>
-                <td></td>
-            </tr>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Rush</td>
+                    <td>Fly By Night</td>
+                    <td>
+                        <img src="images/fly_by_night.jpg"
+                             alt="Rush Fly By Night album cover">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Barenaked Ladies</td>
+                    <td>One Week</td>
+                    <td>
+                        <img src="images/bnl.jpg"
+                             alt="Barenaked Ladies album cover">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Dave Matthews Band</td>
+                    <td>Grey Street</td>
+                    <td>
+                        <img src="images/grey_street.jpg"
+                             alt="Dave Matthews Band album cover">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Modest Mouse</td>
+                    <td>One Chance</td>
+                    <td>
+                        <img src="images/modest_mouse.jpg"
+                             alt="Modest Mouse album cover">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>New Radicals</td>
+                    <td>Someday We'll Know</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Maybe_You%27ve_Been_Brainwashed_Too.jpg"
+                             alt="New Radicals Maybe You've Been Brainwashed Too album cover">
+                    </td>
+                </tr>
+
+            </tbody>
         </table>
+
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
-
-    <!---------------------------------- Begin the footer ------------->
     <footer>
-        <div>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
-        </div>
+        Music can be found here:
+        <a href="https://music.amazon.com">Amazon Music</a>
     </footer>
-    <!---------------------------------- End the footer ------------->
-</body>
 
+</body>
 </html>
