@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name:
-        Date Completed:
+        Name: Lucas Tippie
+        Date Completed: November 20, 2026
     -->
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
+    <title>Drake Songs | Lucas Tippie</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Custom -->
-    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -33,14 +33,19 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        td {
+            color: #FF0000;
+        }
+
         footer {
             font-size: 12px;
             text-align: center;
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body class="music-page">
     <!---------------------------------- Begin the nav-bar ------------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
@@ -53,13 +58,13 @@
                 <ul class="navbar-nav me-auto">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="aboutMe.html" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="music.html" class="nav-link">Music</a>
+                        <a href="music.html" class="nav-link active" aria-current="page">Music</a>
                     </li>
                     <li class="nav-item">
                         <a href="list.html" class="nav-link">Lists</a>
@@ -83,46 +88,48 @@
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
+        <h2>My Top 5 Drake Songs</h2>
         <table id="songs">
             <thead>
                 <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Song</th>
+                    <th scope="col">Album Art</th>
                 </tr>
             </thead>
-            <tr>
-                <td>1</td>
-                <td>Rush</td>
-                <td>Fly By Night</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>BNL</td>
-                <td>One Week</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Dave Matthews Band</td>
-                <td>Grey Street</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Modest Mouse</td>
-                <td>One Chance</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>New Radicals</td>
-                <td>Someday We'll Know</td>
-                <td></td>
-            </tr>
+            <tbody>
+                <tr style="background-color: #ffe6a0; font-weight: bold;">
+                    <td>1</td>
+                    <td>Drake</td>
+                    <td style="color:#00FF00; background-color:sienna;">Feel No Ways</td>
+                    <td><img src="images/views.jpg" alt="Views album cover" width="76" height="76"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Drake</td>
+                    <td>Headlines</td>
+                    <td><img src="images/take-care.jpg" alt="Take Care album cover" width="76" height="76"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Drake</td>
+                    <td>Passionfruit</td>
+                    <td><img src="images/more-life.jpg" alt="More Life album cover" width="76" height="76"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Drake</td>
+                    <td>God’s Plan</td>
+                    <td><img src="images/scorpion.jpg" alt="Scorpion album cover" width="76" height="76"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Drake</td>
+                    <td>Over</td>
+                    <td><img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/65/d3/f6/65d3f6e2-25d5-5890-afe5-526e7cb993ff/00602527458038.rgb.jpg/100x100bb.jpg" alt="Thank Me Later album cover" width="76" height="76"></td>
+                </tr>
+            </tbody>
         </table>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->

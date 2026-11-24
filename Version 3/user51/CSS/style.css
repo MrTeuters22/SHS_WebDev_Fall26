@@ -19,3 +19,27 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.music-page {
+    background-color: #eef4ff;
+    background-image: url("../images/music-background.png");
+}
+
+#songs {
+    width: 100%;
+    max-width: 640px;
+}
+
+#songs th,
+#songs td {
+    padding: 6px 10px;
+    border: 1px solid #ffffff;
+}
+
+main ol {
+    list-style-type: upper-roman;
+}
+
+main ul {
+    list-style-type: square;
+}
