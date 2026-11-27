@@ -9,13 +9,173 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+	
+    border: 1px solid white;
+    text-align: center;
+    background-color: #9FB6CD;
+    color: #003366;
+
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	
+    text-align: center;
+    color: white;
+    background-color: #003366;
+}
+.navbar a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+.navbar a:hover {
+    background-color: #9FB6CD;
+    color: #6A0DAD;
+}
+
+.navbar a.active {
+    background-color: #003366;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #050817;
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+.music-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #762cff;
+}
+
+.page-header h1 {
+    font-size: 50px;
+    margin: 10px;
+    color: white;
+}
+
+.page-header p {
+    color: #b9b8ff;
+    font-size: 18px;
+}
+
+.music-section {
+    margin-top: 35px;
+    background: #10152b;
+    border: 2px solid #762cff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.music-section h2 {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(90deg, #812cff, #2524c9);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background: #352078;
+    padding: 15px;
+    font-size: 19px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #30385e;
+    font-size: 17px;
+}
+
+tr:nth-child(even) {
+    background: #19213a;
+}
+
+tr:hover {
+    background: #29204d;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #762cff;
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+ol {
+    color: darkblue;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+ul {
+    color: darkgreen;
+    font-size: 18px;
+    font-family: Arial;
+}
+ol {
+    color: darkblue;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+ul {
+    color: darkgreen;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightyellow;
+}
+
+/* Background image for the whole website */
+body {
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Ordered list styling */
+ol {
+    color: darkblue;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+/* Unordered list styling */
+ul {
+    color: darkgreen;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightyellow;
 }
